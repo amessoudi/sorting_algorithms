@@ -12,6 +12,13 @@
  * @b: Pointer to the second integer.
  */
 
+
+void swap(int *a, int *b)
+{
+	int temp = *a;
+	*a = *b;
+	*b = temp;
+}
 /**
  *bubble_sort - Sorts an array in ascending order.
  *
@@ -19,13 +26,6 @@
  * @array: Pointer to the array of integers to be sorted.
  * @size: The size of the array.
  */
-void swap(int *a, int *b)
-{
-	int temp = *a;
-	*a = *b;
-	*b = temp;
-}
-
 void bubble_sort(int *array, size_t size)
 {
 	int swapped = 0;
