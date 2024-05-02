@@ -1,19 +1,11 @@
-#include <stdio.h>
-#include <stdlib.h>
 #include "sort.h"
 
 /**
- * swap - Swaps the values of two integers.
- *
- * This function takes pointers to two integers (`a` and `b`) and swaps
- * their values using a temporary variable.
- *
- * @a: Pointer to the first integer.
- * @b: Pointer to the second integer.
+ * swap_ints - Swap two integers in an array.
+ * @a: The first integer to swap.
+ * @b: The second integer to swap.
  */
-
-
-void swap(int *a, int *b)
+void swap_ints(int *a, int *b)
 {
 	int tmp;
 
@@ -21,12 +13,13 @@ void swap(int *a, int *b)
 	*a = *b;
 	*b = tmp;
 }
+
 /**
- *bubble_sort - Sorts an array in ascending order.
- *
- *
- * @array: Pointer to the array of integers to be sorted.
+ * bubble_sort - Sort an array of integers in ascending order.
+ * @array: An array of integers to sort.
  * @size: The size of the array.
+ *
+ * Description: Prints the array after each swap.
  */
 void bubble_sort(int *array, size_t size)
 {
